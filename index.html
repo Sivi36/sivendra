@@ -6,12 +6,14 @@
   <title>Sivendra | Portfolio</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-glow: rgba(56, 189, 248, 0.2);
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #1f6feb;
+      --tag-bg: #21262d;
     }
 
     * {
@@ -26,13 +28,14 @@
       color: var(--text-main);
       line-height: 1.6;
       padding: 2rem 1rem;
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
     }
 
     header {
       text-align: center;
       margin-bottom: 3rem;
+      padding-top: 1rem;
     }
 
     h1 {
@@ -43,32 +46,33 @@
 
     .subtitle {
       color: var(--text-muted);
-      font-size: 1.1rem;
+      font-size: 1.15rem;
     }
 
     .badge-container {
       display: flex;
       justify-content: center;
       gap: 0.5rem;
-      margin-top: 1rem;
+      margin-top: 1.2rem;
       flex-wrap: wrap;
     }
 
     .badge {
-      background: var(--card-bg);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
       font-size: 0.85rem;
       color: var(--accent);
     }
 
     section {
       background-color: var(--card-bg);
+      border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      padding: 1.8rem;
+      margin-bottom: 1.8rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     h2 {
@@ -76,7 +80,7 @@
       margin-bottom: 1rem;
       border-bottom: 2px solid var(--accent);
       display: inline-block;
-      padding-bottom: 0.2rem;
+      padding-bottom: 0.3rem;
     }
 
     p {
@@ -84,92 +88,158 @@
       margin-bottom: 1rem;
     }
 
-    ul {
-      list-style-type: none;
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
     }
 
-    li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.5rem;
+    .skill-card {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .skill-card h3 {
+      font-size: 1.05rem;
       color: var(--text-main);
+      margin-bottom: 0.4rem;
     }
 
-    li::before {
-      content: "▹";
-      position: absolute;
-      left: 0;
+    .skill-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .project-card {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      padding: 1.2rem;
+      border-radius: 8px;
+    }
+
+    .project-card h3 {
+      font-size: 1.1rem;
       color: var(--accent);
+      margin-bottom: 0.5rem;
     }
 
     .links {
       display: flex;
       gap: 1rem;
-      margin-top: 1rem;
+      margin-top: 1.2rem;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
       background-color: var(--accent);
-      color: var(--bg);
+      color: #ffffff;
       padding: 0.6rem 1.2rem;
       border-radius: 6px;
       text-decoration: none;
-      font-weight: bold;
-      transition: opacity 0.2s;
+      font-weight: 600;
+      transition: background-color 0.2s;
     }
 
     .btn:hover {
-      opacity: 0.9;
+      background-color: var(--accent-hover);
+    }
+
+    .btn-secondary {
+      background-color: var(--tag-bg);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--border);
     }
 
     footer {
       text-align: center;
       color: var(--text-muted);
       font-size: 0.85rem;
-      margin-top: 2rem;
+      margin-top: 2.5rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Sivendra</h1>
-    <p class="subtitle">College Student • Developer • Creator</p>
+    <h1>Sivendra B</h1>
+    <p class="subtitle">College Student • App Developer • Content Creator</p>
     <div class="badge-container">
       <span class="badge">English & Tamil</span>
       <span class="badge">Vibe Coding</span>
-      <span class="badge">Fast Typing</span>
+      <span class="badge">High-Speed Typing</span>
+      <span class="badge">Computer Basics</span>
     </div>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a motivated college student with a passionate focus on computer literacy, modern development workflows, and digital content creation. I blend technical fundamentals with speed, efficiency, and creative problem-solving.
+      I am a motivated college student with a passion for tech, software creation, and computer literacy. I combine technical fundamentals with speed, efficiency, and modern AI-assisted workflow methods to build digital projects cleanly and quickly.
     </p>
   </section>
 
   <section id="skills">
-    <h2>Skills & Capabilities</h2>
-    <ul>
-      <li><strong>Vibe Coding & Rapid Prototyping:</strong> Building and testing applications fast using AI-assisted development tools.</li>
-      <li><strong>High-Speed English Typing:</strong> Precise and efficient text execution, documentation, and data entry.</li>
-      <li><strong>Computer Operations:</strong> Software management, troubleshooting, and digital workflow tools.</li>
-      <li><strong>Bilingual Communication:</strong> Fluent in English and Tamil.</li>
-    </ul>
+    <h2>Core Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>💻 Computer Fundamentals</h3>
+        <p>Proficient in file management, system administration, data entry, and core office applications.</p>
+      </div>
+      <div class="skill-card">
+        <h3>🚀 Vibe Coding & Prototyping</h3>
+        <p>Utilizing modern AI-assisted tools and quick iteration to design, build, and test applications efficiently.</p>
+      </div>
+      <div class="skill-card">
+        <h3>⚡ High-Speed Typing</h3>
+        <p>Fast, accurate typing in English for technical documentation, data entry, and communication.</p>
+      </div>
+      <div class="skill-card">
+        <h3>🗣️ Languages</h3>
+        <p>Fluent in English and Tamil (Written & Spoken).</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Connect</h2>
-    <p>Feel free to reach out for collaborations, projects, or networking.</p>
+  <section id="projects">
+    <h2>Featured Work</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Personal Web Portfolio</h3>
+        <p>A lightweight, dark-themed responsive portfolio hosted live on GitHub Pages.</p>
+      </div>
+      <div class="project-card">
+        <h3>App & Game Development</h3>
+        <p>Projects focused on mobile UI/UX, logic implementation, and localized Tamil integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="connect">
+    <h2>Connect With Me</h2>
+    <p>Feel free to reach out for collaborations, internships, or technical opportunities.</p>
     <div class="links">
-      <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn Profile</a>
+      <a href="https://www.linkedin.com/in/sivendra-b-754431434" target="_blank" class="btn">LinkedIn Profile</a>
+      <a href="https://github.com/Sivi36" target="_blank" class="btn btn-secondary">GitHub Profile</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Sivendra. All rights reserved.</p>
+    <p>© 2026 Sivendra B. All rights reserved.</p>
   </footer>
 
 </body>
