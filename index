@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sivendra | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .badge-container {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+
+    section {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: var(--bg);
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sivendra</h1>
+    <p class="subtitle">College Student • Developer • Creator</p>
+    <div class="badge-container">
+      <span class="badge">English & Tamil</span>
+      <span class="badge">Vibe Coding</span>
+      <span class="badge">Fast Typing</span>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a motivated college student with a passionate focus on computer literacy, modern development workflows, and digital content creation. I blend technical fundamentals with speed, efficiency, and creative problem-solving.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Capabilities</h2>
+    <ul>
+      <li><strong>Vibe Coding & Rapid Prototyping:</strong> Building and testing applications fast using AI-assisted development tools.</li>
+      <li><strong>High-Speed English Typing:</strong> Precise and efficient text execution, documentation, and data entry.</li>
+      <li><strong>Computer Operations:</strong> Software management, troubleshooting, and digital workflow tools.</li>
+      <li><strong>Bilingual Communication:</strong> Fluent in English and Tamil.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Connect</h2>
+    <p>Feel free to reach out for collaborations, projects, or networking.</p>
+    <div class="links">
+      <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn Profile</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sivendra. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
